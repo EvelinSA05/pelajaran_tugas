@@ -1,3 +1,7 @@
+
+
+<?php $__env->startSection('content'); ?>
+
 <h1>KALKULATOR</h1>
 
 <form action="<?php echo e(url('calculator')); ?>" method="post">
@@ -21,4 +25,12 @@
     <br><br>
     <input type="submit" name="pangkat" value="pangkat">
 
-</form><?php /**PATH D:\xampp\htdocs\laravel\resources\views/kalkulator.blade.php ENDPATH**/ ?>
+</form>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('menu'); ?>
+    <a href="/">home</a>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('tugas', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\laravel\resources\views/kalkulator.blade.php ENDPATH**/ ?>

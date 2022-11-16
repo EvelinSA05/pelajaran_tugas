@@ -8,11 +8,20 @@
 </head>
 <body>
     <div>
+        <div>
         <h1>Tugas Laravel</h1>
         <ul>
             <li><a href="{{ url('zodiak') }}">Zodiak</a></li>
             <li><a href="{{ url('kalkulator') }}">Kalkulator</a></li>
+            <li><a href="{{ url('suhu') }}">Suhu</a></li>
         </ul>
+        </div>
+        <div>
+            @yield('content')
+        </div>
+        <div>
+            @yield('menu')
+        </div>
     </div>
 </body>
 </html>

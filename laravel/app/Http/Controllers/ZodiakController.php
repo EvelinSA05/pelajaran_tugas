@@ -8,7 +8,9 @@ class ZodiakController extends Controller
 {
     public function index()
     {
-        return view('zodiak');
+        $data = ['nama'=>'lin', 'alamat'=>'kalak', 'sekolah'=>'smk'];
+        $judul = 'belajar laravel';
+        return view('zodiak',['contoh'=>$data,'judul'=>$judul]);
     }
 
     public function zodiak(Request $request)

@@ -1,3 +1,7 @@
+@extends('tugas')
+
+@section('content')
+
 <h1>KALKULATOR</h1>
 
 <form action="{{ url('calculator') }}" method="post">
@@ -22,3 +26,9 @@
     <input type="submit" name="pangkat" value="pangkat">
 
 </form>
+
+@endsection
+
+@section('menu')
+    <a href="/">home</a>
+@endsection
